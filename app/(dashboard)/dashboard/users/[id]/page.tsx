@@ -1,7 +1,7 @@
 import React from "react";
 
-const UserDetails = ({ params }: { params: { id: string } }) => {
-  const { id } = params;
+const UserDetails = async ({ params }: { params: { id: string } }) => {
+  const { id } = await params;
   return <div className="text-3xl">User Details {id}</div>;
 };
 
